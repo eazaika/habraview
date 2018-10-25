@@ -29,4 +29,4 @@ pattern = '''
 print('Content-type: text/html\n')
 
 #print(pattern.format(posts=data.html_list_json()))
-print(pattern.format(posts=data.html_list_mongo()))
+print(pattern.format(posts=data.html_list_db()))

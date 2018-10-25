@@ -1,10 +1,6 @@
 #!/usr/bin/env python3
 import json
-from pymongo import MongoClient
-
-client = MongoClient()
-db = client.habrahabr
-coll = db.titles
+import habradata
 
 class Data:
     HABR = 'habr.json'
@@ -31,9 +27,9 @@ class Data:
             posts.append(content)
         return '<br>'.join(posts)
 
-    def html_list_mongo(self):
+    def html_list_db(self):
         posts = []
-        for post in coll.find():
+        for post in habradata.data():
             content = post['author'] + ' __ ' + post['stars'] + ' : ' + post['title']
             posts.append(content)
         return '<br>'.join(posts)
