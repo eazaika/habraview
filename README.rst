@@ -1,5 +1,5 @@
 =======
-Data microservice for habraparser
+View microservice for habraparser
 =======
 
 Install
