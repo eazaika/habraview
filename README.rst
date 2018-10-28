@@ -1,9 +1,10 @@
 =======
 Data microservice for habraparser
 =======
-Install
+
+Install\n
 $ git clone https://github.com/eazaika/habraview.git
 =======
-Use
+Use\n
 $ cd habraview && python3 -m http.server --cgi
-Then go to http://localhost:8000/cgi-bin/data.py. To refresh/add data use https://github.com/eazaika/habraparser 
+\nThen go to http://localhost:8000/cgi-bin/data.py. To refresh/add data use https://github.com/eazaika/habraparser 
