@@ -1,7 +1,7 @@
 =======
 Data microservice for habraparser
 =======
-Install
+Install\t
 $ git clone https://github.com/eazaika/habraview.git
 =======
 Use
