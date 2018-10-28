@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import json
-import habradata
+from habradata import view
 
 class Data:
     HABR = 'habr.json'
@@ -29,7 +29,7 @@ class Data:
 
     def html_list_db(self):
         posts = []
-        for post in habradata.data():
+        for post in view.data(self):
             content = post['author'] + ' __ ' + post['stars'] + ' : ' + post['title']
             posts.append(content)
         return '<br>'.join(posts)
