@@ -1,0 +1,2 @@
+*.pyc
+/habraview/cgi-bin/__pycache__/
